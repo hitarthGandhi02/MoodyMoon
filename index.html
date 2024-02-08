@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sixtyfour&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Darken Moon</title>
+    <script src="script.js" defer></script>
+</head>
+<body onload="firstDate();">
+<div class="container">
+    <div class="slides slide0" id="slide0">
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="images/logo2.png" alt="" id="logoImg">
+        </div>
+    </div>
+        <div class="aboutUs">
+            About MoodyMoon </div><br> 
+            <p id="ab-info">
+            MoodyMoon shows the moon phase of your locality for any historical, past or future date. <br><br>
+            The features provided are as follows :
+            <ul id="ulS0" style="color: black;">
+                <li style="color: black; font-size: 20px">Current Moon Phase.</li> 
+                <li style="color: black; font-size: 20px">Moon Phase on a particular day. </li>
+                <li style="color: black; font-size: 20px">Illumination percent and other moon information. </li>
+                <li style="color: black; font-size: 20px">Moon horoscope. </li>
+            </ul>
+            </p>
+        
+        
+    </div>
+    <div class="slides slide1" id="slide1">
+        <h2 class="date">Lorem, ipsum dolor.&nbsp;&nbsp;Lorem1</h2>
+        <img src="" alt="" id="mainImg">
+        <div id="phase">FULL MOON</div>
+        
+    </div>
+    <div class="slides slide2">
+        <div class="dateS2">Lorem ipsum dolor sit amet.</div>
+        <div class="moonImgS2">
+            <img src="" alt="" id="mainImgS2">
+        </div>
+        <div class="moonDetails">
+            <div class="phasename">Name : &nbsp; <span id="phasenameVal"></span></div>
+            <div class="illumPer">Illumination  : &nbsp; <span id="illumPerVal"></span></div>
+            <div class="moonRise">Moonrise : &nbsp;<span id="moonRiseVal"></span > </div>
+            <div class="moonSet">Moonset : &nbsp; <span id="moonSetVal"></span></div>
+            <div class="sunRise">Sunrise : &nbsp; <span id="sunRiseVal"></span></div>
+            <div class="sunSet">Sunset : &nbsp; <span id="sunSetVal"></span></div>
+        </div>
+    </div><div class="slides slide3">
+        <h2 id="s3-text">Moon Phase on a particular day?</h2>
+        <input type="date" name="" id="datePicker">
+        <button type="button" id="dateSubmit" onclick="dateSubmit()">Submit Date</button>
+    </div>
+    <div class="slides slide4">
+        <div class="slide4Title">Your moon horoscope</div>
+        <div class="slide4MainText">Ever wondered what phase of moon you were born on?<br> Enter your date of birth and find your moon phase and your moon horoscope.
+        <div class="bdayText">
+            Enter your birthdate 
+        </div>
+        <div id="dateInput">
+            <input type="date" id="s4DatePicker">
+        </div>
+            <div class="s4btn">
+            <button class="btn" id="dateSubmit" onclick="s4DateSubmit()">Submit Date
+            </div>
+            </button>
+        
+    </div>
+    <div class="s4After hidden">
+    <div class="s4Img">
+        <div class="cont">
+        <img src="images/FULL_MOON.png" alt="" id="moonImgS4">
+    </div>
+    <div class="s4Phase"></div>
+</div>
+<div class="horoscope"><span id="horText"></span></div>
+<div class="luckyNum">Your lucky number : <span id="luck-num"></span></div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js"></script>
+
+</body>
+</html>

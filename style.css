@@ -1,0 +1,203 @@
+html, body {
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+    box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Oswald;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: black;    
+}
+.slides  {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+    
+     
+     scroll-snap-align: start;
+}
+.date {
+    margin-top: 30px;
+}
+.slides img {
+    width: 400px;
+}
+.slides h2 {
+    font-size: 40px;
+    max-width: 650px;
+    
+}
+.slide0 {
+    align-items: center;
+    
+    background-color: white;
+    font-family: Oswald;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column ;
+    gap: 50px;
+    background-image: url(images/stars.jpg);
+}
+#phase {
+    font-size: 50px;
+    font-family: Sixtyfour;
+}
+.slide2 {
+    align-items: center;
+    background-color:rgb(17, 15, 15);
+}
+.slide3 {
+    align-items: center;
+    background-color:rgb(20, 14, 14);
+    gap: 50px;
+}
+.Scroll {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    background-color: rgb(50, 40, 68);
+    height: 50px;
+    width: 200px;
+}
+.Scroll img {
+    width: 50px;
+}
+input[type = "date"] {
+    color: black;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    
+}
+button {
+    height: 50px;
+    width: 100px;
+}
+#dateSubmit {
+    color: black;
+}
+#s3-text {
+   margin-bottom: 200px;
+}
+.dateS2 {
+    display: flex;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.moonImgS2 img {
+    width: 300px;
+} 
+.moonDetails {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.moonDetails > * {
+    background-color: rgb(65, 54, 54);
+    width: 350px;
+    
+}
+
+.logo img {
+    width: 150px;
+}
+.slide0Text {
+    font-family: Oswald;
+    align-self: flex-start;
+    font-size: 40px;
+}
+.aboutUs {
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+.nav-bar {
+    width: 100%;
+    border-bottom: 2px solid black;    
+}
+.slide4Title{
+    text-align: center;
+    font-size: 40px;
+}
+.slide4MainText {
+    margin: 80px 25px;
+    font-size: 20px;
+}
+.bdayText {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+}
+#dateInput {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.s4btn {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+
+.s4Phase {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+.s4After {
+    justify-content: center;
+    height: 100%;
+}
+.s4Img img{
+    display: grid;
+    justify-self: center;
+    width: 300px;
+    margin-top: 50px;
+}
+.cont {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#ab-info {
+    font-size: 20px;
+    color: black;
+}
+#ab-info ul {
+    color: black;
+}
+.horoscope {
+    font-size: 20px;
+}
+.luckyNum {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
