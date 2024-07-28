@@ -17,7 +17,7 @@ var city = 'phalodi';
 const img = document.getElementById("mainImg");
 function getMoon([d,m,y]) {
     let mdate = `${y}-${m}-${d}`;
-    const getMoonUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/pune/${mdate}?unitGroup=us&key=QUJDTLMVZNTPMAL2CFAQ8AVBT&include=days`
+    const getMoonUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/pune/${mdate}?unitGroup=us&key=RYLTT5NXCVKAFFXLCTNSSZVTW&include=days`
     return new Promise((res, rej) => {
     let p =  fetch(getMoonUrl);
     p.then((val1) => {
